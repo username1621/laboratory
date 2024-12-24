@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+    <style>
+    </style>
+    <link rel="stylesheet" href="stile.css">
+    <link rel="stylesheet" href="stile1.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<header>
+    <h1> <img id="logo" src="src/image.jpg" alt="Логотип">MySyte.com - Сайт о Lorem Ipsum</h1>
+    <nav>
+        <ul>
+            <li><a href="#" class="menu-item" data-section="section1">Раздел 1</a>
+                <ul class="submenu">
+                    <li data-target="#section1">Подраздел 1.1</li>
+                    <li data-target="#section2">Подраздел 1.2</li>
+                </ul>
+            </li>
+            <li><a href="#" class="menu-item" data-section="section2">Раздел 2</a>
+                <ul class="submenu">
+                    <li data-target="#section3">Подраздел 2.1</li>
+                    <li data-target="#section4">Подраздел 2.2</li>
+                </ul>
+            </li>
+            <li><a href="#" class="menu-item" data-section="section2">Раздел 3</a>
+                <ul class="submenu">
+                    <li data-target="#section5">Подраздел 3.1</li>
+                    <li data-target="#section6">Подраздел 3.2</li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+</header>
+<div class="wrapper">
+    <aside>
+        <h2 class="item">The standard Lorem Ipsum passage</h2>
+        <p class="item">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua..."</p>
+    </aside>
+
+    <article>
+        <section id="section1">Содержание Подраздела 1.1</section>
+        <section id="section2">Содержание Подраздела 1.2</section>
+    </article>
+    <aside>
+        <h2 class="item">1914 translation by H. Rackham</h2>
+        <p class="item">It is a fact that a reader will be distracted by the readable
+            content of a page when looking at its layout.</p>
+    </aside>
+    <article>
+        <section id="section3">Содержание Подраздела 2.1</section>
+        <section id="section4">Содержание Подраздела 2.2</section>
+    </article>
+
+    <article>
+        <section id="section5">
+            <table>
+                <thead>
+                <tr>
+                    <th>Столбец 1</th>
+                    <th>Столбец 2</th>
+                    <th>Столбец 3</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Ячейка 1.1</td>
+                    <td>Ячейка 1.2</td>
+                    <td>Ячейка 1.3</td>
+                </tr>
+                <tr>
+                    <td>Ячейка 2.1</td>
+                    <td>Ячейка 2.2</td>
+                    <td>Ячейка 2.3</td>
+                </tr>
+                <tr>
+                    <td>Ячейка 3.1</td>
+                    <td>Ячейка 3.2</td>
+                    <td>Ячейка 3.3</td>
+                </tr>
+                </tbody>
+            </table></section>
+        <section id="section6">Содержание Подраздела 3.2</section>
+    </article>
+</div>
+<script src="index.js">
+</script>
+</body>
+</html>

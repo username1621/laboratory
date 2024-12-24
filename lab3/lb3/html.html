@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="stile.css">
+    <link rel="stylesheet" href="stile1.css">
+</head>
+<body>
+<dialog>
+    <p id = "itemDialog"></p>
+    <button id="close" onclick="dialog.close();" style="">Зкрыть окно</button>
+</dialog>
+<header>
+    <h1>MySyte.com - Сайт о Lorem Ipsum</h1>
+    <nav>
+        <ul>
+            <li><a href="#" class="menu-item" data-section="section1">Главная</a></li>
+            <li><a href="#" class="menu-item" data-section="section2">Таблица</a></li>
+            <li><a href="#" class="menu-item" data-section="section3">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="wrapper">
+    <aside id="sidebar1" >
+        <h2 class="item">The standard Lorem Ipsum passage</h2>
+        <p class="item">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua..."</p>
+    </aside>
+    <aside id="sidebar2" >
+        <h2 class="item">1914 translation by H. Rackham</h2>
+        <p class="item">It is a fact that a reader will be distracted by the readable
+            content of a page when looking at its layout.</p>
+        <h3 >Options</h3>
+        <ul class="item">
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+        </ul>
+
+    </aside>
+    <article id="section1" class="section">
+        <h2>What is Lorem Ipsum?</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+            classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,
+            a Latin professor at Hampden-Sydney College in Virginia...</p>
+    </article>
+    <table id="section2" class="section">
+        <caption>Таблица</caption>
+        <thead>
+        <tr>
+            <th onclick="toggleHighlight(0)">Столбец 1</th>
+            <th onclick="toggleHighlight(1)">Столбец 2</th>
+            <th onclick="toggleHighlight(2)">Столбец 3</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Ячейка 1-1</td>
+            <td>Ячейка 1-2</td>
+            <td>Ячейка 1-3</td>
+        </tr>
+        <tr>
+            <td>Ячейка 2-1</td>
+            <td>Ячейка 2-2</td>
+            <td>Ячейка 2-3</td>
+        </tr>
+        <tr>
+            <td>Ячейка 3-1</td>
+            <td>Ячейка 3-2</td>
+            <td>Ячейка 3-3</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <form id="surveyForm" >
+        <input type="text" placeholder="Ваше имя" required>
+        <input type="email" placeholder="Ваш email" required>
+        <input type="reset" value="Сбросить">
+        <input type="submit" value="Отправить">
+    </form>
+</div>
+<footer id="section3" class="section">
+    <p >Contacts: admin@mysyte.com</p>
+    <p>Copyright © MySyte.com, 2016</p>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Записная книжка - органайзер</title>
+    <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+<div>
+    <button onclick="prevMonth()">←</button>
+    <span id="monthYear"></span>
+    <button onclick="nextMonth()">→</button>
+</div>
+<table id="calendar"></table>
+<div id="todo-list">
+    <h3>Список дел на <span id="selected-date"></span></h3>
+    <ul id="tasks"></ul>
+    <input type="text" id="new-task" placeholder="Добавить дело" />
+    <input id="add-task" type="button" value="Добавить"/>
+</div>
+<script src="index.js"></script>
+</body>
+</html>

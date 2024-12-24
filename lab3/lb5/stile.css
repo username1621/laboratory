@@ -1,0 +1,50 @@
+.menu {
+    list-style: none;
+    padding: 0;
+}
+.submenu {
+    display: none;
+    list-style: none;
+    padding-left: 20px;
+}
+.menu-item {
+    cursor: pointer;
+}
+section {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #000;
+}
+.active {
+    background-color: yellow;
+}
+table {
+    border-collapse: collapse;
+
+}
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+.highlight {
+    box-shadow: 0 0 10px blue;
+}
+
+ aside {
+     width: 200px;
+     height: 100px;
+     position: absolute;
+     transition: all 0.5s;
+ }
+.center {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+}
+#logo {
+    width: 100px;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
