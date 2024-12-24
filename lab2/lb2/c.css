@@ -1,0 +1,208 @@
+*{
+    margin:0;
+    padding:0;
+}
+header{
+    background-color: #353535;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 105px;
+}
+h1{
+    padding-top: 20px;
+    padding-left: 22px;
+    letter-spacing: 2px;
+    font-size:35px;
+}
+h1 span:first-child {
+    color: #00fff0;
+}
+h1 span:last-child {
+    color: #ffffff;
+}
+p{
+    padding-left: 22px;
+}
+p span:last-child {
+    color: #2447f1;
+}
+header a{
+    text-decoration: none;
+    font-size:20px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    img{width:20px;height:20px}
+}
+header form{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 65px;
+    right:600px;
+
+}
+img{width:25px;height:25px; margin-right:5px;}
+.image-button{
+    width: 25px;
+    height: 25px;
+    background-color: #00fff0;
+    border: none;
+}
+header input{
+    height:24px;
+    width: 300px;
+    font-size: 16px;
+}
+nav{
+    padding-top: 9px;
+    padding-left:5px;
+    /* Задаем внутренние отступы */
+}
+nav ul li {
+    display:inline-block;/*Выстраиваем пункты меню в ряд по горизонтали */
+}
+nav ul li ul {
+    display: none; /* Прячем пункты выпадающего блока меню */
+    position:absolute;
+}
+nav a {
+   text-decoration: none;
+    padding: 15px 20px;
+    font-size: 20px;
+    color: #ffffff;
+}
+a:hover{
+    color: #00fff0;
+}
+nav ul li:hover ul {
+    display:block; /* Отображаем подменю при наведении мыши */
+    background: #353535;
+}
+h2{
+    margin-top: 25px;
+    margin-left: 20px;
+    font-size: 30px;
+}
+main form{
+    margin-top: 22px;
+    margin-left: 25px;
+}
+main form input{
+    height:30px;
+    width: 350px;
+    font-size: 17px;
+}
+main form button{
+    height: 35px;
+    width: 120px;
+    font-size: 17px;
+    background: #393939;
+    color: #fff;
+}
+main form button:hover{
+    background: #0fefe1;
+    border: 1px solid #0fefe1;
+}
+
+#img4{right: 155px; top: 25px; }
+#img5{top: 1px; right: 155px;}
+
+#p3, #p4{
+    color: white;
+    font-size: 21px;
+
+}
+#p4{
+    position: absolute;
+    left: 500px;
+    margin-top:40px;
+}
+#p3{
+    position: absolute;
+    left: 500px;
+    padding-top: 5px;
+}
+footer a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+.container {
+    margin-top: 25px;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    height: 300px;
+    -webkit-overflow-scrolling: touch; /* для плавной прокрутки на мобильных устройствах */
+}
+.slide {
+    flex: none;
+    scroll-snap-align: start;
+    width: 300px;
+    text-align: center;
+    padding: 30px;
+}
+.slide a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+.slide img{
+    width: 250px;
+    height: 200px;
+}
+footer{
+    background-color: #353535;
+    height: 190px;
+
+}
+footer h1{
+    color: #00fff0;
+
+}
+footer img{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+}
+#img1{
+
+    margin-top: 20px;
+    left: 15px;
+}
+#img2{
+    margin-top: 20px;
+    left: 100px;
+}
+#img3{
+    margin-top: 20px;
+    left: 200px;
+}
+#information{
+    position: absolute;
+    left: 500px;
+}
+#contacts{
+    position: absolute;
+    right: 190px;
+}
+
+#p1{
+    position: absolute;
+    color: white;
+    margin-top: 12px;
+    right: 180px;
+    font-size: 21px;
+    padding-top: 5px;
+
+}
+#p2{
+    position: absolute;
+    color: white;
+    margin-top: 40px;
+    right: 180px;
+    font-size: 21px;
+    padding-top: 35px;
+}

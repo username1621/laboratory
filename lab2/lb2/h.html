@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="cards.css">
+    <link rel="stylesheet" href="c.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="index.js"></script>
+</head>
+<body>
+    <header>
+        <p>
+            <a href = "#example.com/1" class = "nav-item" style="position: absolute; right:650px; top:22px">Доставка</a>
+            <a href = "#example.com/2" class = "nav-item" style="position: absolute; right:850px; top:22px">Оплата</a>
+            <a href = "#example.com/3" class = "nav-item" style="position: absolute; right:60px; top:22px"><img src = "src/2.png" alt = "">Вход/Регистрация</a>
+        </p>
+        <h1><span>Mobile</span><span>Store</span></h1>
+        <p>
+            <a href = "#example.com/4" class = "nav-item" style="position: absolute; right:260px; top:65px; "><img src = "src/1.png" alt = "" >Корзина</a>
+            <a href = "#example.com/5" class = "nav-item" style="position: absolute; right: 60px; top:65px"><img src = "src/icons8-избранное-50.png" alt = "">Избранное</a>
+        </p>
+        <nav role="navigation">
+            <ul><li><a href="#"><img src = "src/icons8-меню-50.png" style = "width:20px;height:20px"> Каталог</a>
+                <ul>
+                    <li><a href="#3" class = "nav-item">Смартфоны</a></li>
+                    <li><a href="#0" class = "nav-item">Наушники</a></li>
+                    <li><a href="#1" class = "nav-item">Акссесуары</a></li>
+                    <li><a href="#2" class = "nav-item">Умные часы</a></li>
+                </ul>
+            </li>
+            </ul>
+        </nav>
+        <form id="searchForm">
+            <input type="text" name=text" class="search" placeholder="Поиск">
+            <button class="image-button" type="submit"><img src = "src/icons8-поиск-50.png"></button>
+        </form>
+        <script>
+            document.getElementById('searchForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                alert('Функция на данный момент недоступна.');
+            });
+        </script>
+    </header>
+    <main>
+        <h2>Новинки</h2>
+        <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card" style="">
+                        <!-- Верхняя часть -->
+                        <div class="card__top">
+                            <!-- Изображение-ссылка товара -->
+                            <a href="#" class="card__image">
+                                <img
+                                        src="src/Apple14.jpg"
+                                        alt="Apple IPhone 14 PRO Max Gold"
+                                />
+                            </a>
+                            <!-- Скидка на товар -->
+                            <div class="card__label">-10%</div>
+                        </div>
+                        <!-- Нижняя часть -->
+                        <div class="card__bottom">
+                            <!-- Цены на товар (с учетом скидки и без)-->
+                            <div class="card__prices">
+                                <div class="card__price card__price--discount">135 000</div>
+                                <div class="card__price card__price--common">150 000</div>
+                            </div>
+                            <!-- Ссылка-название товара -->
+                            <a href="#" class="card__title">
+                                Смартфон Apple IPhone 14 Pro Max 256Gb, золотой
+                            </a>
+                            <!-- Кнопка добавить в корзину -->
+                            <button class="card__add">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <!-- Верхняя часть -->
+                        <div class="card__top">
+                            <!-- Изображение-ссылка товара -->
+                            <a href="#" class="card__image">
+                                <img
+                                        src="src/fold2.png"
+                                        alt="Смартфон TECNO Phantom V Fold 2 5G 12/512GB, Karst Green"
+                                />
+                            </a>
+                            <!-- Скидка на товар -->
+                            <div class="card__label">-20%</div>
+                        </div>
+                        <!-- Нижняя часть -->
+                        <div class="card__bottom">
+                            <!-- Цены на товар (с учетом скидки и без)-->
+                            <div class="card__prices">
+                                <div class="card__price card__price--discount">119 999</div>
+                                <div class="card__price card__price--common">149 999</div>
+                            </div>
+                            <!-- Ссылка-название товара -->
+                            <a href="#" class="card__title">
+                                Смартфон TECNO PhantomV Fold2 5G 512GB, Karst Green
+                            </a>
+                            <!-- Кнопка добавить в корзину -->
+                            <button class="card__add">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class ="card">
+                        <!-- Верхняя часть -->
+                        <div class="card__top">
+                            <!-- Изображение-ссылка товара -->
+                            <a href="#" class="card__image">
+                                <img
+                                        src="src/honorv3.png"
+                                        alt="Смартфон HONOR Magic V3 512GB Черный EAC"
+                                />
+                            </a>
+                        </div>
+                        <div class="card__bottom">
+                            <div class="card__prices">
+                                <div class="card__price card__price--common">189 999 </div>
+                            </div>
+                            <!-- Ссылка-название товара -->
+                            <a href="#" class="card__title">
+                                Смартфон HONOR Magic V3 512GB Черный EAC
+                            </a>
+                            <!-- Кнопка добавить в корзину -->
+                            <button class="card__add">В корзину</button>
+                        </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card__top">
+                            <a href="#" class="card__image">
+                                <img
+                                        src="src/samsungS24.jpg"
+                                        alt="Смартфон Samsung Galaxy S24 FE 256GB Серый EAC"
+                                />
+                            </a>
+                        </div>
+                        <div class="card__bottom">
+                            <div class="card__prices">
+                                <div class="card__price card__price--common">69 999</div>
+                            </div>
+                            <a href="#" class="card__title">
+                                Смартфон Apple IPhone 14 Pro Max 256Gb, золотой
+                            </a>
+                            <!-- Кнопка добавить в корзину -->
+                            <button class="card__add">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <!-- Верхняя часть -->
+                        <div class="card__top">
+                            <!-- Изображение-ссылка товара -->
+                            <a href="#" class="card__image">
+                                <img
+                                        src="src/xiaomi14t.png"
+                                        alt="Смартфон Xiaomi 14T 12GB/256GB, Titan Black"
+                                />
+                            </a>
+                        </div>
+                        <!-- Нижняя часть -->
+                        <div class="card__bottom">
+                            <!-- Цены на товар (с учетом скидки и без)-->
+                            <div class="card__prices">
+                                <div class="card__price card__price--common">52 999</div>
+                            </div>
+                            <!-- Ссылка-название товара -->
+                            <a href="#" class="card__title">
+                                Смартфон Xiaomi 14T 12GB/256GB, Titan Black
+                            </a>
+                            <!-- Кнопка добавить в корзину -->
+                            <button class="card__add">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next2"><img src="src/icons8-стрелка-вправо-в-круге-2-50.png"></div>
+            <div class="swiper-button-prev2"><img src="src/icons8-стрелка-влево-в-круге-2-50.png"></div>
+        </div>
+        <h2>Хиты продаж</h2>
+        <div class="swiper-container mySwiper1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card" style="">
+                        <!-- Верхняя часть -->
+                        <div class="card__top">
+                            <!-- Изображение-ссылка товара -->
+                            <a href="#" class="card__image">
+                                <img
+                                        src="src/Apple14.jpg"
+                                        alt="Apple IPhone 14 PRO Max Gold!"
+                                />
+                            </a>
+                            <!-- Скидка на товар -->
+                            <div class="card__label">-10%</div>
+                        </div>
+                        <!-- Нижняя часть -->
+                        <div class="card__bottom">
+                            <!-- Цены на товар (с учетом скидки и без)-->
+                            <div class="card__prices">
+                                <div class="card__price card__price--discount">135 000</div>
+                                <div class="card__price card__price--common">150 000</div>
+                            </div>
+                            <!-- Ссылка-название товара -->
+                            <a href="#" class="card__title">
+                                Смартфон Apple IPhone 14 Pro Max 256Gb, золотой
+                            </a>
+                            <!-- Кнопка добавить в корзину -->
+                            <button class="card__add">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <!-- Верхняя часть -->
+                        <div class="card__top">
+                            <!-- Изображение-ссылка товара -->
+                            <a href="#" class="card__image">
+                                <img
+                                        src="src/fold2.png"
+                                        alt="Смартфон TECNO Phantom V Fold 2 5G 12/512GB, Karst Green!"
+                                />
+                            </a>
+                            <!-- Скидка на товар -->
+                            <div class="card__label">-20%</div>
+                        </div>
+                        <!-- Нижняя часть -->
+                        <div class="card__bottom">
+                            <!-- Цены на товар (с учетом скидки и без)-->
+                            <div class="card__prices">
+                                <div class="card__price card__price--discount">119 999</div>
+                                <div class="card__price card__price--common">149 999</div>
+                            </div>
+                            <!-- Ссылка-название товара -->
+                            <a href="#" class="card__title">
+                                Смартфон TECNO PhantomV Fold2 5G 512GB, Karst Green
+                            </a>
+                            <!-- Кнопка добавить в корзину -->
+                            <button class="card__add">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class ="card">
+                        <!-- Верхняя часть -->
+                        <div class="card__top">
+                            <!-- Изображение-ссылка товара -->
+                            <a href="#" class="card__image">
+                                <img
+                                        src="src/honorv3.png"
+                                        alt="Смартфон HONOR Magic V3 512GB Черный EAC!"
+                                />
+                            </a>
+                        </div>
+                        <div class="card__bottom">
+                            <div class="card__prices">
+                                <div class="card__price card__price--common">189 999 </div>
+                            </div>
+                            <!-- Ссылка-название товара -->
+                            <a href="#" class="card__title">
+                                Смартфон HONOR Magic V3 512GB Черный EAC
+                            </a>
+                            <!-- Кнопка добавить в корзину -->
+                            <button class="card__add">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card__top">
+                            <a href="#" class="card__image">
+                                <img
+                                        src="src/samsungS24.jpg"
+                                        alt="Смартфон Samsung Galaxy S24 FE 256GB Серый EAC!"
+                                />
+                            </a>
+                        </div>
+                        <div class="card__bottom">
+                            <div class="card__prices">
+                                <div class="card__price card__price--common">69 999</div>
+                            </div>
+                            <a href="#" class="card__title">
+                                Смартфон Apple IPhone 14 Pro Max 256Gb, золотой
+                            </a>
+                            <!-- Кнопка добавить в корзину -->
+                            <button class="card__add">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <!-- Верхняя часть -->
+                        <div class="card__top">
+                            <!-- Изображение-ссылка товара -->
+                            <a href="#" class="card__image">
+                                <img
+                                        src="src/xiaomi14t.png"
+                                        alt="Смартфон Xiaomi 14T 12GB/256GB, Titan Black!"
+                                />
+                            </a>
+                        </div>
+                        <!-- Нижняя часть -->
+                        <div class="card__bottom">
+                            <!-- Цены на товар (с учетом скидки и без)-->
+                            <div class="card__prices">
+                                <div class="card__price card__price--common">52 999</div>
+                            </div>
+                            <!-- Ссылка-название товара -->
+                            <a href="#" class="card__title">
+                                Смартфон Xiaomi 14T 12GB/256GB, Titan Black
+                            </a>
+                            <!-- Кнопка добавить в корзину -->
+                            <button class="card__add">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next1"><img src="src/icons8-стрелка-вправо-в-круге-2-50.png"></div>
+            <div class="swiper-button-prev1"><img src="src/icons8-стрелка-влево-в-круге-2-50.png"></div>
+        </div>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            const swiper1 = new Swiper(".mySwiper1", {
+                slidesPerView: 4,
+                spaceBetween: 13,
+                slidesPerGroup: 4,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                navigation: {
+                    nextEl: ".swiper-button-next1",
+                    prevEl: ".swiper-button-prev1",
+                },
+            });
+            const swiper = new Swiper(".mySwiper", {
+                slidesPerView: 4,
+                spaceBetween: 13,
+                slidesPerGroup: 4,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                navigation: {
+                    nextEl: ".swiper-button-next2",
+                    prevEl: ".swiper-button-prev2",
+                },
+            });
+        </script>
+
+        <h2>Узнавайте первыми об акциях</h2>
+        <form action="/" method="post" id="searchForm1">
+            <input type="text" placeholder="Мой e-mail"></input>
+            <button type="submit">Подписаться</button>
+        </form>
+        <script>
+            document.getElementById('searchForm1').addEventListener('submit', function(event) {
+                event.preventDefault();
+                alert('Функция на данный момент недоступна.');
+            });
+        </script>
+        <p><span> Нажимая на кнопку, я соглашаюсь на обработку</span><span> персональных данных.</span></p>
+        <h2>Полезные статьи</h2>
+        <div class="container">
+            <div class="slide">
+                <a href="https://journal.citilink.ru/articles/chto-oznachayut-znachki-v-verhnej-chasti-ekrana-na-android/">
+                    <figure>
+                        <img src ="src/img1.png">
+                        <figcaption>Что означают значки в верхней части экрана на Android</figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://journal.citilink.ru/articles/smartfony-2024-goda-kotorye-mozhno-smelo-pokupat/">
+                    <figure>
+                        <img src ="src/img2.png">
+                        <figcaption>Смартфоны 2024 года, к которым стоит присмотреться</figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="slide">
+                <a href = "https://journal.citilink.ru/articles/top-5-smartfonov-do-30-tysyach-rublej-na-kotorye-stoit-obratit-vnimanie/">
+                    <figure>
+                        <img src ="src/img3.png">
+                        <figcaption>Топ-5 смартфонов до 30 тысяч рублей, на которые стоит обратить внимание</figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://journal.citilink.ru/articles/pochemu-telefon-ne-podklyuchaetsya-k-pk-i-noutbuku/">
+                    <figure>
+                        <img src ="src/img4.png">
+                        <figcaption>Почему телефон не подключается к ПК и ноутбуку</figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://journal.citilink.ru/articles/kak-sdelat-veb-kameru-iz-smartfona-4-prilozheniya/">
+                    <figure>
+                        <img src ="src/img5.png">
+                        <figcaption>Как сделать веб-камеру из смартфона: 4 полезных приложения</figcaption>
+                    </figure>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h1 id = "information">Информация</h1>
+        <h1 id = "contacts">Контакты</h1>
+        <h1><span>Mobile</span><span>Store</span></h1>
+
+        <img src="src/icons8-твиттер-30.png" id = "img1">
+        <img src="src/icons8-телеграмма-app-50.png" id = "img2">
+        <img src="src/icons8-facebook-новый-30.png" id = "img3">
+
+        <p id = "p1"> <img src="src/icons8-почта-30.png" id = "img5">example@mail.ru</p>
+        <p id = "p2"> <img src="src/icons8-телефон-50.png" id = "img4"> +7 999 999-99-99</p>
+        <p id = "p3"><a  href = "#example.com/1" class= "nav-item">О нас</a></p>
+        <p id = "p4" ><a href = "#example.com/1" class = "nav-item" >Доставка</a> и <a href = "#example.com/2" class = "nav-item" >оплата</a></p>
+
+
+    </footer>
+</body>
+</html>
